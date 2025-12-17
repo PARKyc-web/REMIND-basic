@@ -1,15 +1,18 @@
+import Heap.GenericHeap;
 import Heap.HeapOrder;
 import Heap.IntegerHeap;
 
 public class main {
     public static void main(String[] args){
 
-        IntegerHeap heap = new IntegerHeap(HeapOrder.ASC);
-        heap.initForTest();
-        heap.printHeapByLevel();
+        GenericHeap<Integer> heap = new GenericHeap<>(HeapOrder.ASC);
+        heap.add(1);
+        heap.add(4);
+        heap.add(5);
+        heap.add(6);
+        heap.add(0);
+        heap.add(-2);
 
-        IntegerHeap heap2 = new IntegerHeap(HeapOrder.DESC);
-        heap2.initForTest();
-        heap2.printHeapByLevel();
+        heap.printHeapByLevel();
     }
 }
