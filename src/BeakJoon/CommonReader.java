@@ -9,6 +9,10 @@ public class CommonReader {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer st;
 
+    public static String nextLine() throws IOException {
+        return br.readLine();
+    }
+
     public static int nextInt() throws IOException {
         while (st == null || !st.hasMoreTokens()) {
             String line = br.readLine();
