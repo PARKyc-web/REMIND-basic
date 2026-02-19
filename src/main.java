@@ -1,8 +1,9 @@
-import BeakJoon.P1316;
+import BeakJoon.DP.P1463;
+import BeakJoon.DP.P9095;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        P1316 problem = new P1316();
+        P9095 problem = new P9095();
         problem.solve();
     }
 }

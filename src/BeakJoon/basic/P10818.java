@@ -1,4 +1,6 @@
-package BeakJoon;
+package BeakJoon.basic;
+
+import BeakJoon.CommonReader;
 
 import java.util.Arrays;
 

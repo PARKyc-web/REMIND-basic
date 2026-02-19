@@ -25,6 +25,18 @@ public class CommonReader {
         return Integer.parseInt(st.nextToken());
     }
 
+    public static long nextLong() throws IOException {
+        while (st == null || !st.hasMoreTokens()) {
+            String line = br.readLine();
+            if (line == null) {
+                throw new IOException("EOF");
+            }
+
+            st = new StringTokenizer(line);
+        }
+        return Long.parseLong(st.nextToken());
+    }
+
     public static String nextString() throws IOException {
         while (st == null || !st.hasMoreTokens()) {
             String line = br.readLine();
