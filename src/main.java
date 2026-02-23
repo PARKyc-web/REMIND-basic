@@ -1,9 +1,8 @@
-import BeakJoon.DP.P1463;
-import BeakJoon.DP.P9095;
+import BeakJoon.sum.P11660;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        P9095 problem = new P9095();
+        P11660 problem = new P11660();
         problem.solve();
     }
 }
